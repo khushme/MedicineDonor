@@ -1,0 +1,22 @@
+{
+  "name": "reactnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server.js",
+    "heroku-postbuild": "cd medicinedonor && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "create-react-app": "^4.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8",
+    "yarn": "^1.22.10"
+  }
+}
