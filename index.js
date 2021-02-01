@@ -13,9 +13,9 @@ app.use(bodyparser.json());//for parsing POST data coming from Client
 app.use(cors());//to accept request from react server
 app.use(express.urlencoded({ extended:true }));
 
-app.get("/",(req,res)=>{
-let fulllenght=path.join(process.cwd(),"public","index.html");
-});
+// app.get("/",(req,res)=>{
+// let fulllenght=path.join(process.cwd(),"public","index.html");
+// });
 
 
 var routeUser=require("./routers/SignupRouter");
@@ -30,7 +30,7 @@ if(process.env.NODE_ENV==='production')
     })
 }
 
-app.listen(8082,()=>{
+app.listen(port,()=>{
 
     console.log("Service Started");
 })
